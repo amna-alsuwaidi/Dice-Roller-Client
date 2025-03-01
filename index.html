@@ -1,19 +1,22 @@
 <html>
 <head>
-	<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" 
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" 
+        crossorigin="anonymous">
     </script>
-     <script>
-     	function getData()
-        {
-    		$.get( "https://dice-roller-amna-maitha-ahatena7b2gphran.uaenorth-01.azurewebsites.net", function( data ) {
-              $( "#server" ).html( data );
-              console.log(" load was performed");
-            });        
+    <script>
+        function getData() {
+            $.get("https://dice-roller-amna-maitha-ahatena7b2gphran.uaenorth-01.azurewebsites.net", 
+                function(data) {
+                    $("#server").html(data);
+                    console.log("Load was performed");
+                }
+            );
         }
-     </script>
+    </script>
 </head>
 <body>
-<div id="server"></div>
-<button onclick="getData()" > Roll it</button>
+    <div id="server"></div>
+    <button onclick="getData()">Roll it</button>
 </body>
 </html>
